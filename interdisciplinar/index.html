@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Battle_String</title>
+  </head>
+  <body class="background">
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#"><img src="./img/logo.svg" alt="logotipo" /></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto ali">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="./img/modoEscuro.svg" alt="configuracoes" /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="./img/configuracoes.svg" alt="configuracoes" /></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary2 w-100" href="#" role="button">Username</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="./img/perfil.svg" alt="perfil" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col">Escreva seu código aqui Escreva seu código aqui Escreva seu código aqui</div>
+      </div>
+    </main>
+
+    <div class="offcanvas offcanvas-start" style="width: 180px" data-bs-backdrop="false" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header mb-xl-5"></div>
+      <div class="offcanvas-body">
+        <ul class="p-0 press-start">
+          <li class="list-group-item"><a class="btn btn-primary btn-sm btn-responsive w-100 mb-4 py-2" href="#" role="button">Campanha</a></li>
+          <li class="list-group-item"><a class="btn btn-primary btn-sm btn-responsive w-100 mb-4 py-2" href="#" role="button">Multiplayer</a></li>
+          <li class="list-group-item"><a class="btn btn-primary btn-sm btn-responsive w-100 mb-4 py-2" href="#" role="button">Desempenho</a></li>
+          <li class="list-group-item"><a class="btn btn-primary btn-sm btn-responsive w-100 mb-4 py-2" href="#" role="button">Ranking</a></li>
+          <li class="list-group-item"><a class="btn btn-primary btn-sm btn-responsive w-100 mb-4 py-2" href="#" role="button">Conquistas</a></li>
+          <li class="list-group-item"><a class="btn btn-primary btn-sm btn-responsive w-100 mb-4 py-2" href="#" role="button">Amigos</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // var offcanvas = new bootstrap.Offcanvas(document.getElementById("offcanvasExample"), {
+        //   backdrop: "static", --> exibe com pano de fundo !
+        // });
+        var offcanvas = new bootstrap.Offcanvas(document.getElementById("offcanvasExample"));
+
+        document.addEventListener("mousemove", function (event) {
+          var mouseX = event.clientX;
+
+          if (mouseX <= 0) {
+            offcanvas.show();
+          } else if (mouseX >= 500) {
+            offcanvas.hide();
+          }
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </ul>
+  <div class="container">
+    <h5 class="card-title">Estatisticas</h5>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card w-100" style="height: 280px; border: 2px solid black;">
+          <div class="card-body">
+            <div class="d-flex align-items-start">
+              <a class="img-per">
+                <img src="./img/perfil.svg" class="imgperf1" />
+              </a>
+              <div class="ml-2">
+                <p class="card-text2">Kemell_pinto</p>
+                <button type="button" class="btn btn-outline-success"> >   Mestre do teclado</button>
+              </div>
+            </div>
+            <p class="nivel">70</p>
+            <p class="card-text3 mt-2" >Jogador desde **/**/****</p>
+            <a href="#" class="btn btn-info">Adicionar</a>
+          </div>
+        </div>
+      </div>
+          <div class="col-md-4">
+            <div class="card w-100" style="height: 280px; border: 2px solid black;">
+              <div class="card-body">
+                <div class="d-flex align-items-start">
+
+                  <div class="ml-2">
+                    <p class="card-text4">Acuracia média</p>
+                    <p class="card-text5">56,5%</p>
+                    <p class="card-text4">Menor digitação / minuto</p>
+                    <p class="card-text5">03:22</p>
+                    <p class="card-text4">Vitorias</p>
+                    <p class="card-text5">130</p>
+                    <p class="card-text4">Derrotas</p>
+                    <p class="card-text5">98</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card w-100" style="height: 280px; border: 2px solid black;">
+              <div class="card-body">
+                <div class="d-flex align-items-start">
+                  Trilhas concluidas
+        
+                  </div>
+                </div></div></div></div>
+    </div>
+  </div>
+  <div class="container">
+    <h5 class="card-title">Historico de Partidas
+    </h5>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card w-100" style="height: 250px;border: 2px solid black;">
+          <div class="card-body">
+            <p class="card-text"> <a class="img-per" >
+            </div>
+          </div>
+            </div>
+  </body>
+ </html>
+ 
