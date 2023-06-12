@@ -6,8 +6,7 @@
 .btn-responsive {
   max-width: 100%;
   width: auto;
-  font-size: 10px;
-    
+  font-size: 10px;  
 }
 
 .btn-primary2 {
@@ -61,10 +60,6 @@
   opacity: 0.5;
 }
 
-.campo-filtro{
-  height: 120px;
-}
-
 .press-start {
   font-family: 'Press Start 2P', cursive;
 }
@@ -77,10 +72,8 @@
 .press-start-15px-border {
   font-family: 'Press Start 2P', cursive;
   font-size: 20px;
- 
   color: white; /* Define a cor do texto */
   -webkit-text-stroke: 1.5px black; /* Define o contorno com 2px de espessura na cor preta */
-  
 }
 
 .press-start-20px {
@@ -93,28 +86,15 @@
   font-size: 25px;
 }
 
+.press-start-25px-border {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
+  color: white; /* Define a cor do texto */
+  -webkit-text-stroke: 2px black; /* Define o contorno com 2px de espessura na cor preta */
+}
+
 .custom-navbar {
   background-color: #2D2D2E;
-}
-
-
-.procurarTrilha {
-  border:3px solid #050505;
-  border-bottom-width: 6px;
-  background-color: #2D2D2E;
-  padding: 8px;
-}
-
-.container-trilha{
-  margin-top: 60px;
-  height: 600px;
-}
-
-.trilha-bg{
-  border:3px solid #050505;
-  background-color: #2D2D2E;
-  padding: 8px;
-  height: 100px;
 }
 
 .background {
@@ -151,30 +131,22 @@
   position: relative;
   z-index: 9999; 
 }
+/* -------------------------------------------------------------------- */
+/* --------------------Container-Lista-de-Jogadores-------------------- */
+/* -------------------------------------------------------------------- */
 
-.btn-buscar{
-  padding: 9px 15px; /* Define o espaçamento interno do botão */
-  background-color: #75FC72; /* Define a cor de fundo do botão */
-  color: #000; /* Define a cor do texto do botão */
-  border: none; /* Remove a borda do botão */
-  border-radius: 5px; /* Define a borda arredondada do botão */
-  cursor: pointer; /* Altera o cursor do mouse ao passar pelo botão */
+.bg-container-jogador{
+  border:3px solid #050505;
+  background-color: #2D2D2E;
+  padding: 8px;
+  height: 100px;
 }
 
-.btn-iniciarTrilha{
-  
-  border-right: 3px solid #050505;
-  position: relative;
-  background-color: #75FC72; /* Define a cor de fundo do botão */
-  color: #000; /* Define a cor do texto do botão */
-  cursor: pointer; /* Altera o cursor do mouse ao passar pelo botão */
+.num-jogador{
+  background-color: aqua;
+  width: 75px;
+  height: 75px;
 }
 
-.btn-iniciarTrilha .botao {
-  position: absolute; /* Define o posicionamento absoluto para o SVG */
-  top: 0;
-  left: 0;
-  width: 100%; /* Define a largura como 100% */
-  height: 100%; /* Define a altura como 100% */
-}
+
 
